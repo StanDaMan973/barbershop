@@ -253,7 +253,7 @@ header .logo img {
 
 .ex-border::after {
     content: "";
-    background: #a38f78;
+    background: #f1c40f;
     width: 70px;
     height: 4px;
     position: absolute;
@@ -281,4 +281,31 @@ header .logo img {
     text-transform: capitalize;
     font-family: 'Open Sans', sans-serif;
     
+}
+
+.experience-column .ex-button {
+    background: #f1c40f;
+    width: 100px;
+    margin: 0 auto;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    padding: 15px 40px;
+    color: #000000dc;
+    text-transform: uppercase;
+    
+}
+
+.experience-image-box {
+    padding: 20px;
+    
+
+}
+
+.experience-image-box img {
+    height: 600px;
+    max-width: 100%;
+    width: 85%;
+    margin-left: 70px;
 }
