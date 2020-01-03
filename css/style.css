@@ -12,6 +12,7 @@ body {
     max-width: 1170px;
     margin: 0 auto;
 }
+
 /********************* global variables ******************/
 
 
@@ -237,12 +238,8 @@ header .logo img {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     padding-bottom: 10px;
-    
+
 }
-
-
-
-
 
 
 .ex-border {
@@ -259,7 +256,7 @@ header .logo img {
     position: absolute;
     left: 0;
     top: 20px;
-    
+
 }
 
 
@@ -280,7 +277,7 @@ header .logo img {
     margin: 40px 0px;
     text-transform: capitalize;
     font-family: 'Open Sans', sans-serif;
-    
+
 }
 
 .experience-column .ex-button {
@@ -294,12 +291,12 @@ header .logo img {
     padding: 15px 40px;
     color: #000000dc;
     text-transform: uppercase;
-    
+
 }
 
 .experience-image-box {
     padding: 20px;
-    
+
 
 }
 
@@ -309,3 +306,131 @@ header .logo img {
     width: 85%;
     margin-left: 70px;
 }
+
+
+/********************* special services ********************/
+
+
+.special-services {
+    background: #eaeff2;
+    height: 120vh;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+
+.special-services h2 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    padding-top: 100px;
+}
+
+
+.special-services .special-column .special-img {
+    width: 100%;
+    max-width: 50px;
+    padding: 20px 550px;
+
+
+}
+
+.special-services .special-column .card-boxes  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin:0px 15px;
+}
+.special-services .special-column .card-inner {
+    width: 100%;
+    max-width: 330px;
+    border: 4px solid #000000;
+    height: 500px;
+    padding: 10px 10px;
+}
+
+.special-services .special-column .card-inner .car-image-box {
+    height: 100%;
+}
+
+.special-services .special-column .card-inner .car-image-box .card-img img {
+    max-width: 330px;
+    height: 250px;
+    width: 100%;
+  
+
+}
+
+.special-services .special-column .card-inner .car-image-box .card-text {
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    
+}
+
+
+.special-services .special-column .card-inner .car-image-box .card-text h4 {
+    color: #d19d64;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+
+.special-services .special-column .card-inner .car-image-box .card-text p {
+    font-size: 13px;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding: 0 20px;
+    padding-bottom: 40px;
+}
+
+.special-services .special-column .card-inner .car-image-box .card-text .service-button {
+    background: transparent;
+    border: 1px solid #000000;
+    width: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    padding: 12px 40px;
+    color: #000000dc;
+    text-transform: uppercase;
+    transition: background .2s ease-in-out;
+}
+
+.special-services .special-column .card-inner .car-image-box .card-text .service-button:hover {
+    background: #f1c40f;
+}
+
+
+/************** Testimonials  ************************/
+
+#Testimonials {
+    background: linear-gradient(0deg, rgba(24, 23, 23, 0.726), rgba(27, 26, 26, 0.712)), url('/img/BarberTools1.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 110vh;
+}
+
+#Testimonials h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    padding-top:80px;
+    text-transform: uppercase;
+}
+
+#Testimonials #Testimonial-line {
+    padding-top:20px;
+    color: #f1c40f;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+
