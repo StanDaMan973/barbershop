@@ -17,15 +17,16 @@ body {
 
 
 .cover-column {
-    height: 100vh;
+    height: 120vh;
     width: 100%;
+    
 }
 
 .cover {
     background: linear-gradient(0deg, rgba(24, 23, 23, 0.726), rgba(27, 26, 26, 0.712)), url('/img/cover.jpg');
     background-position: center center;
     background-size: cover;
-    height: 110vh;
+    height: 120vh;
 
 }
 
@@ -104,7 +105,7 @@ header .logo img {
 }
 
 .icon {
-    width: 18%;
+    width: 235px;
     margin: 0 auto;
 }
 
@@ -115,7 +116,7 @@ header .logo img {
 .unique {
     position: absolute;
     top: 300px;
-    left: 283px;
+    left: 300px;
 
 }
 
@@ -165,7 +166,7 @@ header .logo img {
     font-family: 'Open Sans', sans-serif;
     padding: 15px 30px;
     color: #000000dc;
-    margin-left: 210px;
+    margin-left: 190px;
     text-transform: uppercase;
 
 }
@@ -336,12 +337,13 @@ header .logo img {
 
 }
 
-.special-services .special-column .card-boxes  {
+.special-services .special-column .card-boxes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
-    margin:0px 15px;
+    margin: 0px 15px;
 }
+
 .special-services .special-column .card-inner {
     width: 100%;
     max-width: 330px;
@@ -358,14 +360,14 @@ header .logo img {
     max-width: 330px;
     height: 250px;
     width: 100%;
-  
+
 
 }
 
 .special-services .special-column .card-inner .car-image-box .card-text {
     text-align: center;
     padding: 20px 0px 0px 0px;
-    
+
 }
 
 
@@ -413,6 +415,7 @@ header .logo img {
     background: linear-gradient(0deg, rgba(24, 23, 23, 0.726), rgba(27, 26, 26, 0.712)), url('/img/BarberTools1.jpg');
     background-position: center center;
     background-size: cover;
+    position: relative;
     height: 110vh;
 }
 
@@ -422,15 +425,186 @@ header .logo img {
     font-weight: 700;
     color: #ffffff;
     text-align: center;
-    padding-top:80px;
+    padding-top: 80px;
     text-transform: uppercase;
 }
 
 #Testimonials #Testimonial-line {
-    padding-top:20px;
+    padding-top: 20px;
     color: #f1c40f;
     font-size: 40px;
     width: 100%;
     text-align: center;
 }
 
+.Testimonials-carousel {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.Testimonials-carousel .Carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Carousel-inner>.item {
+    position: relative;
+    display: none;
+    animation: 0.5s ease-in-out;
+}
+
+.Carousel-inner>.active,
+.Carousel-inner>.next {
+    display: block;
+}
+
+.Carousel-inner>.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.carousel-inner>.to-left {
+    animation-name: left;
+}
+
+.carousel-inner>.from-right {
+    animation-name: right;
+}
+
+.carousel-inner>.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.carousel-inner>.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+.Carousel-container {
+    margin: 0 auto;
+}
+
+.Testimonials-carousel .Carousel-inner  .Carousel-container .circleface {
+    border-radius: 50%;
+}
+
+.Testimonial-text {
+    padding: 30px 0px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #fff;
+    line-height: 32px;
+    width: 60%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.author {
+    margin: 0;
+    color: #f1c40f;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    
+}
+
+.carousel-control {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+
+}
+
+.carousel-control.right {
+    right: 50px;
+    left: auto;
+}
+
+.carousel-control.left {
+    left: 50px;
+    right: auto;
+}
+
+.carousel-control>.arrow {
+    position: absolute;
+    top: 55%;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    transform: translateY(-50%);
+    background-size: 18px;
+    color: #000000;
+    background: #f1c40f;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px 10px;
+    transition: all .2s ease-in-out;
+
+}
+
+
+
+.carousel-control>.arrow.right {
+    right: 50%;
+}
+
+.carousel-control .fas {
+    font-size: 24px;
+    padding: 4px 0px;
+}
+
+
+.carousel-indicators-tm {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    transform: translateX(-50%);
+}
+
+.carousel-indicators-tm li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.carousel-indicators-tm li.active {
+    background-color: #f1c40f;
+}
+
+
+@keyframes left {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes right {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
