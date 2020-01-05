@@ -415,8 +415,9 @@ header .logo img {
     background: linear-gradient(0deg, rgba(24, 23, 23, 0.726), rgba(27, 26, 26, 0.712)), url('/img/BarberTools1.jpg');
     background-position: center center;
     background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
-    height: 110vh;
+    height: 700px;
 }
 
 #Testimonials h2 {
@@ -429,13 +430,7 @@ header .logo img {
     text-transform: uppercase;
 }
 
-#Testimonials #Testimonial-line {
-    padding-top: 20px;
-    color: #f1c40f;
-    font-size: 40px;
-    width: 100%;
-    text-align: center;
-}
+
 
 .Testimonials-carousel {
     position: absolute;
@@ -447,7 +442,7 @@ header .logo img {
     transform: translate(-50%, -50%);
 }
 
-.Testimonials-carousel .Carousel-inner {
+ .Carousel-inner {
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -470,20 +465,20 @@ header .logo img {
     width: 100%;
 }
 
-.carousel-inner>.to-left {
+.Carousel-inner>.to-left {
     animation-name: left;
 }
 
-.carousel-inner>.from-right {
+.Carousel-inner>.from-right {
     animation-name: right;
 }
 
-.carousel-inner>.to-right {
+.Carousel-inner>.to-right {
     animation-name: right;
     animation-direction: reverse;
 }
 
-.carousel-inner>.from-left {
+.Carousel-inner>.from-left {
     animation-name: left;
     animation-direction: reverse;
 }
@@ -492,8 +487,9 @@ header .logo img {
     margin: 0 auto;
 }
 
-.Testimonials-carousel .Carousel-inner  .Carousel-container .circleface {
+.Testimonials-carousel .Carousel-inner  .Carousel-container img {
     border-radius: 50%;
+    width: 100px;
 }
 
 .Testimonial-text {
@@ -502,7 +498,7 @@ header .logo img {
     font-size: 16px;
     color: #fff;
     line-height: 32px;
-    width: 60%;
+    width: 50%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
@@ -539,7 +535,7 @@ header .logo img {
 
 .carousel-control>.arrow {
     position: absolute;
-    top: 55%;
+    top: 40%;
     display: inline-block;
     width: 50px;
     height: 30px;
@@ -582,6 +578,7 @@ header .logo img {
     height: 10px;
     cursor: pointer;
     border-radius: 10px;
+    border: 1px solid #ffffffde;
 }
 
 .carousel-indicators-tm li.active {
@@ -608,3 +605,14 @@ header .logo img {
         left: 0;
     }
 }
+
+#Testimonials #Testimonial-line {
+    padding-top: 20px;
+    color: #f1c40f;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/************* Our Team Section ****************/
