@@ -296,7 +296,7 @@ header .logo img {
 }
 
 .experience-image-box {
-    padding: 20px;
+    padding-top: 40px;
 
 
 }
@@ -702,3 +702,191 @@ header .logo img {
     text-transform: uppercase;
 }
 
+/******************** Pricing Table *********************************/
+
+.Pricing-Table {
+    background: linear-gradient(0deg, rgba(24, 23, 23, 0.856), rgba(27, 26, 26, 0.856)), url('/img/barbershopchair.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 800px;
+}
+
+.Pricing-Table h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 80px;
+    text-transform: uppercase;
+}
+
+
+.Pricing-Table #Testimonial-line {
+    padding-top: 20px;
+    color: #f1c40f;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.pricingtable-container {
+    margin: 0px;
+}
+
+.tabbed-content {
+    padding-top: 40px;
+}
+
+.tabs ul {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    border-bottom: #f1c40f solid 2px;
+    background: #000000;
+}
+
+.tabs ul li {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    background: none;
+   
+} 
+
+.tabs li {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: normal;
+    padding-bottom: 2px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 6px 15px;
+}
+
+.tabs ul li a {
+    padding: .6em 1.7em;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    display: block;
+    color: #888888; 
+}
+
+.tabs ul li a:hover {
+    background: #f1c40f;
+    color: #000000;
+}
+
+ .tabs ul li a.active {
+    background: #f1c40f;
+    color: #000000;
+    
+}
+
+
+[data-tab-target] {
+    background: #f1c40f;
+    color: #000000;
+    transition: all .2s ease-in-out;
+}
+
+.active[data-tab-target] {
+    background: #f1c40f;
+    color: #000000;
+   
+}
+
+[data-tab-content] {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition: all .2s ease-in-out;
+}
+
+.active[data-tab-content] {
+    opacity: 1;
+    visibility: visible;
+   
+}
+ 
+
+
+/* .tabbed-content .t-item .item-content {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition: all .2s ease-in-out;
+    
+}
+
+.tabbed-content .t-item.active .item-content {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+
+} */
+
+.price-list-main {
+    width: 100%;
+    padding: 20px 0px 0px 4px;
+}
+
+.price-list-full-row {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+
+.price-list-row.right-space {
+    width: 550px;
+    display: inline-block;
+    padding: 0 2% 0 0;
+}
+
+.price-list-row.left-space {
+    width: 580px;
+    display: inline-block;
+}
+
+.price-list-box {
+    width: 100%;
+}
+ 
+.price-list-inner-box {
+    width: 100%;
+    border-bottom: #656464 solid 1px;
+}
+
+.price-list-description p {
+    font-size: 14px;
+    text-transform: capitalize;
+    text-align: left;
+    color: #c2c2c2;
+    font-family: 'Open Sans', sans-serif;
+    padding: 8px 0 0 0;
+}
+
+.price-list-service-name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+.price-list-service-price {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: right;
+    color: #d19d64;
+    margin-top: -12px;
+}
