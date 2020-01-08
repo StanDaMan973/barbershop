@@ -75,28 +75,12 @@ document.querySelector('.carousel-indicators-tm').addEventListener('click', func
 });
 
 
-// problem: I need to create a function that will display my content 
-// when i click on a tab
-
-//steps
-// i need to get all the tabs and save them to a variole - $
-// i need to get all the table items and save them to a variable -$
-// i need to add a click event to all the elements - $
-// i need to hide all the table elements
-// i need to be able to remove the active class from the elements
-// i need to add the active class to the tabs when clicked 
-// i need to able to add the active class to tableitems and display the table
-
-
 let tabLinks = document.querySelectorAll('[data-tab-target]');
 let tabItems = document.querySelectorAll('[data-tab-content]');
 
 
-
-
 tabLinks.forEach(function(tab) {
-	tab.addEventListener('click', function(e) {
-		tab.classList.remove('active');
+	tab.addEventListener('click', function() {
 
 		let target = document.querySelector(tab.dataset.tabTarget)
 		tabItems.forEach(function (tabItems) {

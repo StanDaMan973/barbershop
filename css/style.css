@@ -768,7 +768,7 @@ header .logo img {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     padding: 6px 15px;
-    color: #000000; 
+    color: #888888; 
 }
 
 .tabs ul li a {
@@ -776,7 +776,7 @@ header .logo img {
     text-decoration: none;
     transition: all .2s ease-in-out;
     display: block;
-    color: #888888; 
+    
 }
 
 
@@ -822,7 +822,7 @@ header .logo img {
 
 .price-list-main {
     width: 100%;
-    padding: 20px 0px 0px 4px;
+    padding: 40px 0px 0px 4px;
 }
 
 .price-list-full-row {
@@ -859,6 +859,7 @@ header .logo img {
     color: #c2c2c2;
     font-family: 'Open Sans', sans-serif;
     padding: 8px 0 0 0;
+    line-height: 24px;
 }
 
 .price-list-service-name {
@@ -875,6 +876,7 @@ header .logo img {
     font-size: 20px;
     text-transform: uppercase;
     text-align: right;
-    color: #d19d64;
-    margin-top: -12px;
+    color: #f1c40f;
+    margin-top: -20px;
+    
 }
