@@ -768,6 +768,7 @@ header .logo img {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     padding: 6px 15px;
+    color: #000000; 
 }
 
 .tabs ul li a {
@@ -778,29 +779,28 @@ header .logo img {
     color: #888888; 
 }
 
-.tabs ul li a:hover {
-    background: #f1c40f;
+
+
+.tab {
+    cursor: pointer;
     color: #000000;
+    
 }
 
- .tabs ul li a.active {
+ .tab:hover {
+    background: #f1c40f;
+    color: #000000;
+    transition: all .2s ease-in-out;
+}
+
+
+.tab.active {
     background: #f1c40f;
     color: #000000;
     
 }
 
 
-[data-tab-target] {
-    background: #f1c40f;
-    color: #000000;
-    transition: all .2s ease-in-out;
-}
-
-.active[data-tab-target] {
-    background: #f1c40f;
-    color: #000000;
-   
-}
 
 [data-tab-content] {
     opacity: 0;
@@ -817,20 +817,8 @@ header .logo img {
  
 
 
-/* .tabbed-content .t-item .item-content {
-    opacity: 0;
-    visibility: hidden;
-    height: 0;
-    transition: all .2s ease-in-out;
-    
-}
 
-.tabbed-content .t-item.active .item-content {
-    opacity: 1;
-    visibility: visible;
-    height: auto;
 
-} */
 
 .price-list-main {
     width: 100%;

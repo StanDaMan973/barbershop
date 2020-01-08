@@ -94,20 +94,20 @@ let tabItems = document.querySelectorAll('[data-tab-content]');
 
 
 
-tabLinks.forEach(function(tab){
-	tab.addEventListener('click', function() {
-		tab.classList.add('active');	
-		for (let i = 0; i < tab.length; i++) {
-			tab.classList.remove('active');
-			
-		}
+tabLinks.forEach(function(tab) {
+	tab.addEventListener('click', function(e) {
+		tab.classList.remove('active');
 
 		let target = document.querySelector(tab.dataset.tabTarget)
-		tabItems.forEach(function(tabItems) {
+		tabItems.forEach(function (tabItems) {
 			tabItems.classList.remove('active');
 		});
 		target.classList.add('active');
+
+		tabLinks.forEach(function(tab) {
+			tab.classList.remove('active');
+		});
+		tab.classList.add("active");
+		target.classList.add('active');
 	})
 });
-
-
