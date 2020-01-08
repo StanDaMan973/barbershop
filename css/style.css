@@ -11,6 +11,12 @@ body {
 .container {
     max-width: 1170px;
     margin: 0 auto;
+    height: 100%;
+
+}
+
+.row {
+    height: 100%;
 }
 
 /********************* global variables ******************/
@@ -710,7 +716,7 @@ header .logo img {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    height: 800px;
+    height: 1000px;
 }
 
 .Pricing-Table h2 {
@@ -806,7 +812,7 @@ header .logo img {
     opacity: 0;
     visibility: hidden;
     height: 0;
-    transition: all .2s ease-in-out;
+    transition: all .5s ease-out;
 }
 
 .active[data-tab-content] {
@@ -815,10 +821,6 @@ header .logo img {
    
 }
  
-
-
-
-
 
 .price-list-main {
     width: 100%;
@@ -879,4 +881,65 @@ header .logo img {
     color: #f1c40f;
     margin-top: -20px;
     
+}
+
+.Pricing-Table .book-box {
+    position: absolute;
+    max-width: 900px;
+    width: 100%;
+    top: 750px;
+    left: 110px;
+    border: #3d3c3b solid 2px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    transition: border .2s ease-in-out;
+    
+}
+
+.Pricing-Table .book-box:hover {
+    border: #f1c40f solid 2px;
+}
+
+.Pricing-Table .hours-box {
+    display: flex;
+   
+}
+
+.Pricing-Table .hours-box ,
+.far {
+    color: #f1c40f;
+    font-size: 18px;
+}
+
+.Pricing-Table .hours-box p {
+    margin: 14px 0px 0px 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.Pricing-Table .button-box a {
+    background: #f1c40f;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 30px;
+    color: #000000dc;
+    text-transform: uppercase;
+    float: right;
+}
+
+/*******************  Discount Section **************************/
+
+.Discount {
+    background: #eaeff2;
+    height: 1000px;
+}
+
+.Discount img {
+    width: 100px;
 }
