@@ -83,7 +83,7 @@ tabLinks.forEach(function(tab) {
 	tab.addEventListener('click', function() {
 
 		let target = document.querySelector(tab.dataset.tabTarget)
-		tabItems.forEach(function (tabItems) {
+		tabItems.forEach(function(tabItems) {
 			tabItems.classList.remove('active');
 		});
 		target.classList.add('active');
@@ -95,3 +95,17 @@ tabLinks.forEach(function(tab) {
 		target.classList.add('active');
 	})
 });
+
+
+// portfolio grid with filtering 
+// steps 
+
+// i need to give all the elements a event lister 
+
+// i need to create a function that will show filtered columns 
+
+// i need to create a function that will hide columns that are not selected
+
+// i need to create a function that will show all columns 
+
+// i need to to assign the active class to the current button
