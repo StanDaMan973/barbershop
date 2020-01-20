@@ -80,15 +80,17 @@ let tabItems = document.querySelectorAll('[data-tab-content]');
 
 
 tabLinks.forEach(function(tab) {
-	tab.addEventListener('click', function() {
+	tab.addEventListener('click', function () {
 
 		let target = document.querySelector(tab.dataset.tabTarget)
-		tabItems.forEach(function(tabItems) {
+		
+
+		tabItems.forEach(function (tabItems) {
 			tabItems.classList.remove('active');
 		});
 		target.classList.add('active');
 
-		tabLinks.forEach(function(tab) {
+		tabLinks.forEach(function (tab) {
 			tab.classList.remove('active');
 		});
 		tab.classList.add("active");
@@ -97,15 +99,36 @@ tabLinks.forEach(function(tab) {
 });
 
 
-// portfolio grid with filtering 
-// steps 
 
-// i need to give all the elements a event lister 
 
-// i need to create a function that will show filtered columns 
+// goal: portfolio gallery with filtering 
 
-// i need to create a function that will hide columns that are not selected
 
-// i need to create a function that will show all columns 
+// let galleryTabs = document.querySelectorAll("[data-button]");
+// let galleryContent = document.querySelectorAll("[data-gallery]");
+// let gallerySection = Array.from(galleryContent);
 
-// i need to to assign the active class to the current button
+
+// galleryTabs.forEach(function(tab) {
+// 	tab.addEventListener('click', function() {
+		
+		
+
+
+// 		galleryTabs.forEach(function(tab) {
+// 			tab.classList.remove('current');
+// 		});
+// 		tab.classList.add("current");
+
+
+// 		gallerySection.forEach(function(tabItems) {
+
+// 			tabItems.classList.remove("current")
+
+// 		});
+		
+// 		// add current class on click to target element 
+		
+
+// 	});
+// });
