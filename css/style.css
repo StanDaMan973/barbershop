@@ -1254,6 +1254,10 @@ header .logo img {
 
 }
 
+.control-btn:focus {
+    outline: none;
+}
+
 .control-btn:hover {
     background: linear-gradient(to bottom, #f1c40f 5%, #f1c40f 100%);
     background-color: #f1c40f;
@@ -1285,16 +1289,16 @@ header .logo img {
 
 .hidden {
     display: none;
-    animation: fade-out 1s ease-out ;
-    
-	
+    animation: fade-out 1s ease-out;
+
+
 }
 
 .visible {
     display: block;
     animation: fade-in 1s ease-in;
-   
-	
+
+
 }
 
 @keyframes fade-in {
@@ -1328,22 +1332,23 @@ header .logo img {
     padding-bottom: 40px;
 }
 
-#member .container .row .member-column{
+#member .container .row .member-column {
     display: grid;
-    grid-template-columns: 800px 300px; 
+    grid-template-columns: 800px 300px;
 
 }
+
 .member-left {
     padding-top: 118px;
-    padding-left: 110px;
+    padding-left: 50px;
 }
 
 .member-left .member-box {
     display: inline-block;
 }
 
- .member-left h3 {
-    font-size: 30px;
+.member-left h3 {
+    font-size: 35px;
     font-family: 'Oswald', sans-serif;
     color: #eaeff2;
     text-align: center;
@@ -1374,4 +1379,75 @@ header .logo img {
     max-width: 170px;
     margin: auto;
 }
+
+/************************ contact ******************************/
+
+#contact {
+    background: linear-gradient(0deg, rgba(24, 23, 23, 0.904), rgba(27, 26, 26, 0.904)), url('/img/barbershopchair.jpeg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 400px;
+    padding-bottom: 20px;
+}
+
+.contact-column {
+    height: 100%;
+}
+.contact-column .contact-title {
+    padding-bottom: 40px;
+}
+
+
+.contact-column .contact-title h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 60px;
+    text-transform: uppercase;
+
+}
+
+.contact-box-column {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.contact-box-column .box .icon {
+    display: block;
+    background: #FFFFFF;
+    color: #000000;
+    border-radius: 100%;
+    width: 40px;
+    height: 30px;
+    padding-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact-box-column .box .text h6 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #f1c40f;
+    text-align: center;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.contact-box-column .box .text p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
 
