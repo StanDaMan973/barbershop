@@ -1395,6 +1395,7 @@ header .logo img {
 .contact-column {
     height: 100%;
 }
+
 .contact-column .contact-title {
     padding-bottom: 40px;
 }
@@ -1440,7 +1441,7 @@ header .logo img {
     text-transform: uppercase;
 }
 
-.contact-box-column .box .text p{
+.contact-box-column .box .text p {
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
     font-weight: 300;
@@ -1450,4 +1451,153 @@ header .logo img {
     padding-top: 10px;
 }
 
+
+/* map section */
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+#map-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#map-street {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    font-weight: 400;
+}
+
+#map-city {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* footer section */
+
+#footer {
+    background: #191919;
+    background-position: center center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.row .footer-column {
+    padding-top: 80px;
+}
+
+.logo-footer {
+    text-align: center;
+}
+
+.logo-footer img {
+    width: 200px;
+}
+
+.footer-links ul {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    position: relative;
+    border-right: 1px solid #f1c40f;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.footer-links ul li:nth-child(10) {
+    border-right: none;
+}
+
+
+.footer-links ul li .footer-link {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    color: #808080;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.footer-column p {
+    font-size: 16px;
+    line-height: 16px;
+    color: #808080;
+    padding: 30px 0;
+    text-align: center;
+   
+}
+
+.subscribe {
+    padding-top: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+.subscribe h6 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    color: #808080;
+}
+
+.subscribe img {
+    width: 50px;
+}
+
+.subscribe p {
+    font-size: 16px;
+    line-height: 16px;
+    color: #808080;
+    padding: 30px 0;
+   
+}
+
+.subscribe #email {
+    max-width: 350px;
+    width: 100%;
+    margin-left:60px;
+    position: relative;
+}
+
+.subscribe input[type="email"] {
+    border: 1px solid #626262;
+    background: #191919;
+    font-size: 12px;
+    line-height: 14px;
+    color: #a2a3a5;
+    font-weight: 400;
+    width: 100%;
+    height: 43px;
+    padding: 0 48px 0 9px;
+}
+
+.subscribe input[type="submit"] {
+    background: url('/img/yellowmustache.png') no-repeat center center;
+    cursor: pointer;
+    width: 60px;
+    height: 33px;
+    position: relative;
+    right: 70px;
+    top: 1px;
+    text-align: center;
+    border: none;
+    background: #f1c40f;
+    
+    
+}
 

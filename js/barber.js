@@ -55,18 +55,6 @@ function showItem(direction) {
 	});
 }
 
-document.querySelector('.carousel-control.left').addEventListener('click', function () {
-	if (isEnabled) {
-		previousItem(currentItem);
-	}
-});
-
-document.querySelector('.carousel-control.right').addEventListener('click', function () {
-	if (isEnabled) {
-		nextItem(currentItem);
-	}
-});
-
 document.querySelector('.carousel-indicators-tm').addEventListener('click', function (e) {
 	var target = [].slice.call(e.target.parentNode.children).indexOf(e.target);
 	if (target !== currentItem && target < dots.length) {
@@ -112,19 +100,19 @@ let hairstyleFilter = document.getElementById("hairstyle-filter");
 
 
 
-const applyFilter = function(filter) {
-	item.forEach(function(item) {
+const applyFilter = function (filter) {
+	item.forEach(function (item) {
 		item.classList.remove('visible');
 		item.classList.add('hidden');
 	});
 	document.querySelectorAll(`[data-category=${filter}]`).forEach(item => item.classList.add('visible'));
 }
 
-const makeActive = function(element) {
-    button.forEach(function(item) {
+const makeActive = function (element) {
+	button.forEach(function (item) {
 		item.classList.remove('active')
 	});
-    element.classList.add('active');
+	element.classList.add('active');
 }
 
 applyFilter('haircut');
@@ -133,19 +121,55 @@ applyFilter('haircut');
 haircutFilter.addEventListener('click', () => {
 	makeActive(haircutFilter);
 	applyFilter('haircut');
-  });
+});
 
-  clipperFilter.addEventListener('click', () => {
+clipperFilter.addEventListener('click', () => {
 	makeActive(clipperFilter);
 	applyFilter('clipper');
-  });
+});
 
-  shaverFilter.addEventListener('click', () => {
+shaverFilter.addEventListener('click', () => {
 	makeActive(shaverFilter);
 	applyFilter('shaver');
-  });
+});
 
-  hairstyleFilter.addEventListener('click', () => {
+hairstyleFilter.addEventListener('click', () => {
 	makeActive(hairstyleFilter);
 	applyFilter('hairstyle');
-  });
+});
+
+function initMap() {
+	var options = {
+		zoom: 8,
+		center: {
+			lat: 40.770892,
+			lng: -74.183653
+		},
+
+	}
+
+	var map = new google.maps.Map(document.getElementById('map'), options);
+	var location = '<h6 id="map-title">Barbershop Original</h6> ' + '<p id="map-street">132 bloomfield ave </p> ' + '<p id="map-city">Newark, NJ 07104</p> ' ;
+
+	var marker = new google.maps.Marker({
+		position: {
+			lat: 40.770892,
+			lng: -74.183653
+		},
+		map: map,
+
+	});
+
+	var infoWindow = new google.maps.InfoWindow({
+		content: location
+	});
+
+	
+
+	marker.addListener('click', function(){
+		infoWindow.open(map, marker);
+		
+    });
+
+
+}
