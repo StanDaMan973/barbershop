@@ -173,3 +173,24 @@ function initMap() {
 
 
 }
+
+const navbarToggler = document.querySelector(".navbar-toggler")
+const navbarMenu = document.querySelector(".mobile-nav ul")
+const navbarLinks = document.querySelectorAll(".mobile-nav a"); 
+
+navbarToggler.addEventListener('click', navbarToggleClick) 
+
+function navbarToggleClick() {
+    navbarToggler.classList.toggle('open-navbar-toggler');
+    navbarMenu.classList.toggle('open'); 
+}
+
+
+navbarLinks.forEach(elem => elem.addEventListener('click', navbarClick));  
+
+function navbarClick() {
+    if(navbarMenu.classList.contains('open')) {
+        navbarToggler.click(); 
+
+    }
+}
