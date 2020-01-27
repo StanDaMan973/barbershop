@@ -1622,10 +1622,7 @@ header .logo img {
 
 }
 
-/* media queries */
-
-
-
+/************************** media queries ***********************/
 
 
 @media only screen and (min-width: 1300px) {
@@ -1646,7 +1643,7 @@ header .logo img {
 
 
     .header-container {
-        padding-left: 194px;
+        padding-left: 112px;
     }
 
     .icon {
@@ -1656,8 +1653,8 @@ header .logo img {
 
     .unique {
         position: absolute;
-        top: 300px;
-        left: 400px;
+        top: 266px;
+        left: 430px;
     }
 
     .experience {
@@ -1929,17 +1926,14 @@ header .logo img {
         /* height: 500px; */
         max-height: 0;
         overflow: hidden;
-        background-color: #ffffff;
+        background-color: #000000;
         transition: all ease-in-out 0.3s;
         position: absolute;
         z-index: 10;
 
     }
 
-    .responsive-menu #home {
-        color: #ffffff;
-    }
-
+   
     .mobile-nav .responsive-menu.open {
         margin-top: 50px;
         max-height: 110vh;
@@ -1951,11 +1945,9 @@ header .logo img {
         width: 100%;
         transition: all .2s ease-in-out;
         padding: 15px 10px;
-        border-bottom: 1px solid #ffffff;
+        
 
     }
-
-
 
     .mobile-nav .responsive-menu li:hover {
         background-color: rgba(255, 255, 255, 0.15);
@@ -1964,8 +1956,8 @@ header .logo img {
     .mobile-nav .responsive-menu li a {
         position: relative;
         text-decoration: none;
-        font-size: 10px;
-        color: #000000;
+        font-size: 14px;
+        color: #f1c40f;
         text-transform: uppercase;
         transition: all .2s ease-in-out;
         margin: 0 10px;
@@ -1974,11 +1966,7 @@ header .logo img {
 
     }
 
-    .mobile-nav .responsive-menu li a:hover {
-        color: #51d466;
-
-
-    }
+  
 
 
 
@@ -2372,6 +2360,11 @@ header .logo img {
         height: 130px;
     }
 
+    #member {
+        background: #000000;
+        height: 300px;
+    }
+
     .member-left h3 {
         font-size: 20px;
         margin-left: 20px;
@@ -2392,10 +2385,349 @@ header .logo img {
         padding-top: 40px;
     }
 
-    #member {
-        background: #000000;
-        height: 300px;
+    .subscribe #email {
+        max-width: 300px;
+        margin-left: 65px;
+        
     }
 
+    #contact {
+        height: 800px;
+        padding-bottom: 20px;
+    }
+
+    .contact-box-column {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact-box-column .box {
+        padding-bottom: 40px;
+    }
+
+    .footer-links ul li {
+        display: block;
+        position: relative;
+        border-right: 1px solid #f1c40f;
+        padding-bottom: 10px;
+    }
+
+    .subscribe {
+        padding-top: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #footer {
+        height: 100%;
+    }
+
+    .row .footer-column {
+        padding-top: 40px;
+    }
+
+    .subscribe p {
+        padding-top: 30px;
+    }
+
+    .OurTeam .OurTeam-column .card-inner .card-img {
+        height: 400px;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+
+    .pricingtable-container {
+        max-width: 350px;
+    }
+
+    .Pricing-Table .book-box {
+        max-width: 250px;
+        width: 100%;
+        top: 1260px;
+        left: 36px;
+       
+    }
+
+    .Pricing-Table .button-box a {
+        font-size: 14px;
+        padding: 15px 15px;
+    }
+
+    .Discount .Discount-column .discount-box {
+        max-width: 250px;
+    }
+
+    .Discount .Discount-column .discount-box #text1 {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+
+    .Discount .Discount-column .discount-box #text2 {
+        font-size: 21px;
+        padding-bottom: 5px;
+    }
+
+    .member-left {
+        padding-top: 120px;
+        padding-left: 16px;
+    }
+
+
+    .unique h3 {
+        font-size: 60px;
+        padding-bottom: 30px;
+    }
+
+    .experience-column h3 {
+        font-size: 32px;
+    }
+
+    .special-services .special-column .card {
+        margin: 0 auto;
+    }
+
+    .special-services .special-column .card-inner {
+        width: 100%;
+        max-width: 350px;
+        border: 4px solid #000000;
+        height: 480px;
+        padding: 10px 10px;
+    }
+
+    .OurTeam .OurTeam-column .card-boxes {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        width: 85%;
+        max-width: 100%;
+       
+    }
+
+    .subscribe #email {
+        max-width: 230px;
+        margin-left: 70px;
+    }
+
+    .Pricing-Table .book-box {
+        max-width: 250px;
+        width: 100%;
+        top: 1355px;
+        left: 36px;
+    }
+
+    .control-btn {
+       
+        font-size: 12px;  
+    }
+
+    .mobile-nav .responsive-menu {
+        width: 90%;
+    }
+
+    .appointment-title-box h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 80px;
+        text-transform: uppercase;
+    }
+
+    .mobile-nav .responsive-menu.open {
+        margin-top: 35px;
+        max-height: 110vh;
+    }
+
+    .experience-column h3 {
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+
+    .special-services h2 {
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+        padding-top: 100px;
+    }
+
+    .special-services .special-column .card-inner {
+        width: 100%;
+        max-width: 300px;
+        
+    }
+
+    #Testimonials h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 38px;
+       
+    }
+
+    .Pricing-Table .book-box {
+        max-width: 210px;
+        width: 100%;
+        top: 1300px;
+        left: 32px;
+    }
+
+    .Pricing-Table .button-box a {
+        font-size: 11px;
+        padding: 15px 15px;
+    }
+
+    .Pricing-Table .hours-box p {
+        font-size: 11px;
+        color: #FFFFFF;
+    }
+
+    .Discount .Discount-column .discount-box {
+        max-width: 180px;
+    }
+
+    .control-btn {
+        font-size: 8px;
+    }
+
+    .member-left h3 {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .experience-image-box img {
+        height: 600px;
+        max-width: 100%;
+        width: 88%;
+        margin-left: 22px;
+    }
+
+    .subscribe #email {
+        max-width: 229px;
+        margin-left: 70px;
+        padding: 0 1px 0 9px;
+    }
+
+
+}
+
+@media only screen and (max-width: 370px) {
+
+    .unique h3 {
+        font-size: 50px;
+        padding-bottom: 30px;
+    }
+
+    .experience-column h3 {
+        font-size: 25px;
+    }
+
+    .experience-image-box img {
+        height: 340px;
+        max-width: 100%;
+        width: 88%;
+        margin-left: 20px;
+    }
+
+    .special-services h2 {
+        font-size: 35px;
+    }
+
+    .mobile-nav .responsive-menu {
+        width: 88%;
+    }
+
+    .special-services .special-column .card-boxes {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        
+    }
+
+    .special-services .special-column .card-inner {
+        width: 100%;
+        max-width: 240px;
+    }
+
+    .Pricing-Table .book-box {
+        max-width: 150px;
+        width: 100%;
+        top: 1330px;
+        left: 32px;
+    }
+
+    .pricingtable-container {
+        max-width: 280px;
+    }
+
+    .price-list-service-name {
+        font-size: 16px;
+    }
+
+    .Discount {
+        background: #eaeff2;
+        height: 1000px;
+    }
+
+    .appointment-column .booking-box .box-column .appointment-box {
+        width: 65%;
+        background: #f1c40f;
+        padding: 40px;
+        margin: 0 auto;
+    }
+
+    .appointment-form-field select {
+        width: 107%;
+    }
+
+    .member-left img {
+        width: 60px;
+        display: inline-block;
+    }
+
+    .member-left h3 {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .subscribe #email {
+        max-width: 189px;
+        margin-left: 55px;
+        padding: 0 1px 0 9px;
+    }
+
+    .footer-column p {
+        font-size: 12px;
+        line-height: 16px;
+        color: #808080;
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    #Testimonials h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 32px;
+    }
+
+    .Pricing-Table h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 80px;
+        text-transform: uppercase;
+    }
+
+    .appointment-column .booking-box .open-hours-column {
+        padding: 0 15px;
+        width: 88%;
+    }
 
 }
